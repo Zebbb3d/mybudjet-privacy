@@ -1,248 +1,193 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Urekoin - Privacy Policy</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background: #f5f5f5;
-        }
-        .container {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        h1 {
-            color: #1B2A4A;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #1B2A4A;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            border-bottom: 2px solid #E3F2FD;
-            padding-bottom: 5px;
-        }
-        .last-updated {
-            color: #666;
-            font-size: 14px;
-            margin-bottom: 30px;
-        }
-        p, li {
-            margin-bottom: 10px;
-        }
-        ul {
-            margin-left: 20px;
-            margin-bottom: 15px;
-        }
-        .highlight {
-            background: #E3F2FD;
-            padding: 15px;
-            border-radius: 8px;
-            margin: 20px 0;
-            border-left: 4px solid #1B2A4A;
-        }
-        .contact {
-            background: #E8EDF2;
-            padding: 20px;
-            border-radius: 8px;
-            margin-top: 30px;
-        }
-        .lang-switch {
-            text-align: right;
-            margin-bottom: 20px;
-        }
-        .lang-switch a {
-            color: #1B2A4A;
-            text-decoration: none;
-            padding: 5px 10px;
-            border: 1px solid #1B2A4A;
-            border-radius: 5px;
-            margin-left: 5px;
-            cursor: pointer;
-        }
-        .lang-switch a:hover, .lang-switch a.active {
-            background: #1B2A4A;
-            color: white;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>uRekoin — Privacy Policy</title>
+<style>
+  :root { --navy:#1B2A4A; --accent:#3B82F6; --bg:#0D0D0D; --card:#13182a; --text:#E6E9F0; --muted:#9aa3b2; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+         line-height:1.6; padding:24px; }
+  .wrap { max-width:760px; margin:0 auto; background:var(--card); border-radius:16px;
+          padding:28px 26px; box-shadow:0 8px 40px rgba(0,0,0,.4); }
+  h1 { font-size:1.7rem; margin:0 0 4px; }
+  h2 { font-size:1.15rem; margin:26px 0 6px; color:#fff; }
+  p, li { color:var(--text); }
+  .muted { color:var(--muted); font-size:.9rem; }
+  a { color:var(--accent); }
+  .lang { display:flex; gap:8px; margin-bottom:18px; }
+  .lang button { background:transparent; color:var(--muted); border:1px solid #2a3350;
+                 border-radius:999px; padding:6px 14px; cursor:pointer; font-size:.85rem; }
+  .lang button.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  section[hidden] { display:none; }
+  .note { background:#1b2236; border-left:3px solid var(--accent); padding:10px 14px;
+          border-radius:8px; margin:10px 0; font-size:.92rem; }
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="lang-switch">
-            <a href="#" id="btn-it" class="active" onclick="showLang('it'); return false;">Italiano</a>
-            <a href="#" id="btn-en" onclick="showLang('en'); return false;">English</a>
-        </div>
+<div class="wrap">
+  <div class="lang">
+    <button id="btn-it" class="active" onclick="setLang('it')">Italiano</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
 
-        <!-- ITALIAN VERSION -->
-        <div id="lang-it">
-            <h1>🔐 Privacy Policy</h1>
-            <p class="last-updated">Ultimo aggiornamento: Aprile 2026</p>
+  <!-- ============================= ITALIANO ============================= -->
+  <section id="it">
+    <h1>🔐 Informativa sulla Privacy</h1>
+    <p class="muted">uRekoin · Ultimo aggiornamento: giugno 2026</p>
+    <p>uRekoin è un'app di gestione del budget personale sviluppata da Sebastian Mulè
+       ("noi", "lo sviluppatore"). La tua privacy è importante. Questa informativa spiega
+       quali dati l'app tratta, dove restano e con chi vengono eventualmente condivisi.</p>
 
-            <p><strong>Urekoin</strong> è un'applicazione per la gestione del budget personale sviluppata da <strong>Zebbb</strong>.</p>
-            <p>La tua privacy è importante per noi. Questa policy spiega come trattiamo i tuoi dati.</p>
+    <h2>1. Dati che l'app tratta sul tuo dispositivo</h2>
+    <p>I tuoi dati finanziari sono salvati <strong>localmente sul tuo dispositivo</strong>
+       (database SQLite) e <strong>non vengono inviati ai nostri server</strong>:</p>
+    <ul>
+      <li>Impostazioni di budget (stipendio, obiettivi di risparmio)</li>
+      <li>Spese e categorie inserite manualmente o rilevate</li>
+      <li>Spese fisse, abbonamenti e scadenze</li>
+      <li>Preferenze dell'app (lingua, valuta)</li>
+    </ul>
 
-            <div class="highlight">
-                <strong>🛡️ In sintesi:</strong> Urekoin funziona al 100% offline. I tuoi dati finanziari restano sul tuo dispositivo e non vengono mai inviati a server esterni.
-            </div>
+    <h2>2. Accesso alle notifiche (auto-tracking)</h2>
+    <p>Se attivi l'auto-tracking, l'app legge le notifiche di pagamento per rilevarne
+       l'importo. Questa analisi avviene <strong>esclusivamente sul dispositivo</strong>:
+       il contenuto delle notifiche non viene inviato a noi né a terzi.</p>
 
-            <h2>1. Dati Raccolti</h2>
-            <p>Urekoin raccoglie e memorizza <strong>localmente sul tuo dispositivo</strong>:</p>
-            <ul>
-                <li>Informazioni sul budget (stipendio, obiettivi di risparmio)</li>
-                <li>Spese e categorie inserite manualmente</li>
-                <li>Spese fisse e programmate</li>
-                <li>Preferenze dell'app (lingua, valuta)</li>
-            </ul>
+    <h2>3. Importazione da screenshot (OCR)</h2>
+    <p>Se condividi uno screenshot per importare transazioni, l'immagine viene analizzata
+       <strong>sul dispositivo</strong> tramite Google ML Kit (riconoscimento testo on-device).
+       Il modello di riconoscimento può essere scaricato da Google Play Services. Le immagini
+       non vengono caricate sui nostri server.</p>
 
-            <h2>2. Accesso alle Notifiche</h2>
-            <p>Se attivi la funzione <strong>"Auto-Tracking"</strong>, Urekoin richiede l'accesso alle notifiche del dispositivo per:</p>
-            <ul>
-                <li>Rilevare automaticamente i pagamenti dalle notifiche bancarie</li>
-                <li>Estrarre importo e nome del commerciante</li>
-                <li>Proporti di registrare la spesa (sempre con conferma)</li>
-            </ul>
-            
-            <div class="highlight">
-                <strong>⚠️ Importante:</strong> Le notifiche vengono elaborate SOLO localmente sul dispositivo. Nessun dato delle notifiche viene mai trasmesso a internet o a server esterni.
-            </div>
-
-            <h2>3. Dati NON Raccolti</h2>
-            <p>Urekoin <strong>NON</strong> raccoglie:</p>
-            <ul>
-                <li>Dati di identificazione personale</li>
-                <li>Dati bancari o numeri di carta di credito</li>
-                <li>Dati di localizzazione</li>
-                <li>Dati di utilizzo per analytics</li>
-                <li>Nessun dato per pubblicità mirata</li>
-            </ul>
-
-            <h2>4. Condivisione dei Dati</h2>
-            <p>I tuoi dati <strong>non vengono mai condivisi</strong> con terze parti. Non vendiamo, affittiamo o scambiamo le tue informazioni.</p>
-
-            <h2>5. Archiviazione e Sicurezza</h2>
-            <p>Tutti i dati sono archiviati localmente sul tuo dispositivo utilizzando un database SQLite sicuro. I dati non vengono sincronizzati con servizi cloud a meno che tu non scelga esplicitamente di esportarli.</p>
-
-            <h2>6. I Tuoi Diritti</h2>
-            <p>Hai il pieno controllo dei tuoi dati:</p>
-            <ul>
-                <li><strong>Accesso:</strong> Puoi visualizzare tutti i tuoi dati nell'app</li>
-                <li><strong>Esportazione:</strong> Puoi esportare i tuoi dati in CSV/Excel</li>
-                <li><strong>Eliminazione:</strong> Puoi eliminare tutti i dati disinstallando l'app o usando la funzione "Reset App" nelle impostazioni</li>
-            </ul>
-
-            <h2>7. Acquisti In-App</h2>
-            <p>Urekoin offre un abbonamento Premium opzionale gestito tramite Google Play. Le transazioni vengono elaborate direttamente da Google. Non abbiamo accesso ai tuoi dati di pagamento.</p>
-
-            <h2>8. Pubblicità</h2>
-            <p>Urekoin utilizza Google AdMob per mostrare annunci nella versione gratuita. AdMob può raccogliere dati anonimi del dispositivo per fornire annunci pertinenti. Puoi consultare la <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy di Google</a> per maggiori dettagli. La versione Premium è priva di pubblicità.</p>
-
-            <h2>9. Modifiche alla Policy</h2>
-            <p>Eventuali modifiche a questa policy verranno pubblicate su questa pagina con la data di aggiornamento.</p>
-
-            <div class="contact">
-                <h2>📧 Contatti</h2>
-                <p>Per domande sulla privacy o sull'app:</p>
-                <p><strong>Sviluppatore:</strong> Zebbb</p>
-                <p><strong>Email:</strong> sebastianmule24051993@gmail.com</p>
-            </div>
-        </div>
-
-        <!-- ENGLISH VERSION -->
-        <div id="lang-en" style="display:none;">
-            <h1>🔐 Privacy Policy</h1>
-            <p class="last-updated">Last updated: April 2026</p>
-
-            <p><strong>Urekoin</strong> is a personal budget management application developed by <strong>Zebbb</strong>.</p>
-            <p>Your privacy is important to us. This policy explains how we handle your data.</p>
-
-            <div class="highlight">
-                <strong>🛡️ In short:</strong> Urekoin works 100% offline. Your financial data stays on your device and is never sent to external servers.
-            </div>
-
-            <h2>1. Data Collected</h2>
-            <p>Urekoin collects and stores data <strong>locally on your device</strong>:</p>
-            <ul>
-                <li>Budget information (salary, savings goals)</li>
-                <li>Manually entered expenses and categories</li>
-                <li>Fixed and scheduled expenses</li>
-                <li>App preferences (language, currency)</li>
-            </ul>
-
-            <h2>2. Notification Access</h2>
-            <p>If you enable the <strong>"Auto-Tracking"</strong> feature, Urekoin requests notification access to:</p>
-            <ul>
-                <li>Automatically detect payments from bank notifications</li>
-                <li>Extract amount and merchant name</li>
-                <li>Suggest recording the expense (always with confirmation)</li>
-            </ul>
-            
-            <div class="highlight">
-                <strong>⚠️ Important:</strong> Notifications are processed ONLY locally on the device. No notification data is ever transmitted to the internet or external servers.
-            </div>
-
-            <h2>3. Data NOT Collected</h2>
-            <p>Urekoin does <strong>NOT</strong> collect:</p>
-            <ul>
-                <li>Personal identification data</li>
-                <li>Bank details or credit card numbers</li>
-                <li>Location data</li>
-                <li>Usage data for analytics</li>
-                <li>Any data for targeted advertising</li>
-            </ul>
-
-            <h2>4. Data Sharing</h2>
-            <p>Your data is <strong>never shared</strong> with third parties. We do not sell, rent, or trade your information.</p>
-
-            <h2>5. Storage and Security</h2>
-            <p>All data is stored locally on your device using a secure SQLite database. Data is not synchronized with cloud services unless you explicitly choose to export it.</p>
-
-            <h2>6. Your Rights</h2>
-            <p>You have full control over your data:</p>
-            <ul>
-                <li><strong>Access:</strong> You can view all your data in the app</li>
-                <li><strong>Export:</strong> You can export your data to CSV/Excel</li>
-                <li><strong>Deletion:</strong> You can delete all data by uninstalling the app or using the "Reset App" function in settings</li>
-            </ul>
-
-            <h2>7. In-App Purchases</h2>
-            <p>Urekoin offers an optional Premium subscription managed through Google Play. Transactions are processed directly by Google. We do not have access to your payment data.</p>
-
-            <h2>8. Advertising</h2>
-            <p>Urekoin uses Google AdMob to display ads in the free version. AdMob may collect anonymous device data to serve relevant ads. You can review <a href="https://policies.google.com/privacy" target="_blank">Google's Privacy Policy</a> for more details. The Premium version is ad-free.</p>
-
-            <h2>9. Policy Changes</h2>
-            <p>Any changes to this policy will be posted on this page with the update date.</p>
-
-            <div class="contact">
-                <h2>📧 Contact</h2>
-                <p>For questions about privacy or the app:</p>
-                <p><strong>Developer:</strong> Zebbb</p>
-                <p><strong>Email:</strong> sebastianmule24051993@gmail.com</p>
-            </div>
-        </div>
+    <h2>4. Pubblicità (Google AdMob)</h2>
+    <p>La versione gratuita mostra annunci tramite <strong>Google AdMob</strong>. Per erogare
+       gli annunci, Google e i suoi partner pubblicitari possono raccogliere e trattare
+       <strong>identificatori del dispositivo e dati d'uso</strong> (es. ID pubblicità,
+       informazioni del dispositivo). Questo è l'unico flusso di dati verso terze parti.</p>
+    <div class="note">
+      <strong>Consenso (utenti UE/SEE, Regno Unito, Svizzera):</strong> al primo avvio mostriamo
+      un modulo di consenso Google (UMP) in cui puoi <strong>accettare o rifiutare</strong> l'uso
+      dei dati a fini pubblicitari. Se rifiuti, gli annunci saranno non personalizzati.
     </div>
+    <p>Per dettagli su come Google tratta i dati:
+       <a href="https://policies.google.com/technologies/partner-sites">Come Google utilizza i dati</a>.
+       La versione Premium è <strong>senza pubblicità</strong>.</p>
 
-    <script>
-        function showLang(lang) {
-            document.getElementById('lang-it').style.display = lang === 'it' ? 'block' : 'none';
-            document.getElementById('lang-en').style.display = lang === 'en' ? 'block' : 'none';
-            document.getElementById('btn-it').className = lang === 'it' ? 'active' : '';
-            document.getElementById('btn-en').className = lang === 'en' ? 'active' : '';
-        }
-    </script>
+    <h2>5. Acquisti in-app</h2>
+    <p>L'abbonamento Premium è gestito da <strong>Google Play Billing</strong>. I dati di
+       pagamento sono trattati da Google: lo sviluppatore <strong>non vi ha accesso</strong>.</p>
+
+    <h2>6. Dati che NON raccogliamo</h2>
+    <p>Lo sviluppatore non raccoglie né riceve sui propri server: la tua identità anagrafica,
+       le credenziali o i numeri di conto/carta, la posizione GPS, né analitiche d'uso.
+       (Resta valido quanto indicato al punto 4 per i dati gestiti da Google AdMob.)</p>
+
+    <h2>7. Condivisione dei dati</h2>
+    <p>Lo sviluppatore <strong>non vende, affitta o cede</strong> i tuoi dati personali o
+       finanziari. Gli unici terzi coinvolti sono <strong>Google AdMob</strong> (dati di
+       dispositivo per la pubblicità, punto 4) e <strong>Google Play</strong> (acquisti, punto 5).</p>
+
+    <h2>8. Conservazione e sicurezza</h2>
+    <p>I dati sono conservati localmente (SQLite), senza sincronizzazione cloud salvo
+       esportazione esplicita da parte tua (CSV/Excel).</p>
+
+    <h2>9. I tuoi diritti</h2>
+    <p>Puoi consultare, esportare (CSV/Excel) o eliminare i tuoi dati dalle impostazioni
+       dell'app o disinstallandola. Puoi modificare in qualsiasi momento la scelta sul consenso
+       pubblicitario reimpostando le preferenze del dispositivo/app.</p>
+
+    <h2>10. Modifiche all'informativa</h2>
+    <p>Eventuali aggiornamenti saranno pubblicati su questa pagina con la relativa data.</p>
+
+    <h2>📧 Contatti</h2>
+    <p>Per qualsiasi domanda: <a href="mailto:sebastianmule24051993@gmail.com">sebastianmule24051993@gmail.com</a></p>
+  </section>
+
+  <!-- ============================= ENGLISH ============================= -->
+  <section id="en" hidden>
+    <h1>🔐 Privacy Policy</h1>
+    <p class="muted">uRekoin · Last updated: June 2026</p>
+    <p>uRekoin is a personal budget management application developed by Sebastian Mulè
+       ("we", "the developer"). Your privacy matters. This policy explains what data the app
+       handles, where it stays, and with whom it may be shared.</p>
+
+    <h2>1. Data the app handles on your device</h2>
+    <p>Your financial data is stored <strong>locally on your device</strong> (SQLite database)
+       and is <strong>not sent to our servers</strong>:</p>
+    <ul>
+      <li>Budget settings (salary, savings goals)</li>
+      <li>Manually entered or detected expenses and categories</li>
+      <li>Fixed expenses, subscriptions and due dates</li>
+      <li>App preferences (language, currency)</li>
+    </ul>
+
+    <h2>2. Notification access (auto-tracking)</h2>
+    <p>If you enable auto-tracking, the app reads payment notifications to detect the amount.
+       This analysis happens <strong>entirely on-device</strong>: notification content is never
+       sent to us or to third parties.</p>
+
+    <h2>3. Screenshot import (OCR)</h2>
+    <p>If you share a screenshot to import transactions, the image is analyzed
+       <strong>on-device</strong> using Google ML Kit (on-device text recognition). The
+       recognition model may be downloaded from Google Play Services. Images are not uploaded
+       to our servers.</p>
+
+    <h2>4. Advertising (Google AdMob)</h2>
+    <p>The free version shows ads via <strong>Google AdMob</strong>. To serve ads, Google and
+       its advertising partners may collect and process <strong>device identifiers and usage
+       data</strong> (e.g. advertising ID, device information). This is the only flow of data
+       to third parties.</p>
+    <div class="note">
+      <strong>Consent (EU/EEA, UK, Switzerland users):</strong> on first launch we show a Google
+      consent form (UMP) where you can <strong>accept or refuse</strong> the use of data for
+      advertising. If you refuse, ads will be non-personalized.
+    </div>
+    <p>For details on how Google uses data:
+       <a href="https://policies.google.com/technologies/partner-sites">How Google uses data</a>.
+       The Premium version is <strong>ad-free</strong>.</p>
+
+    <h2>5. In-app purchases</h2>
+    <p>The Premium subscription is handled by <strong>Google Play Billing</strong>. Payment data
+       is processed by Google: the developer <strong>has no access</strong> to it.</p>
+
+    <h2>6. Data we do NOT collect</h2>
+    <p>The developer does not collect or receive on its servers: your identity, credentials or
+       account/card numbers, GPS location, or usage analytics. (Point 4 still applies to data
+       handled by Google AdMob.)</p>
+
+    <h2>7. Data sharing</h2>
+    <p>The developer <strong>does not sell, rent or trade</strong> your personal or financial
+       data. The only third parties involved are <strong>Google AdMob</strong> (device data for
+       advertising, point 4) and <strong>Google Play</strong> (purchases, point 5).</p>
+
+    <h2>8. Storage and security</h2>
+    <p>Data is stored locally (SQLite), with no cloud sync unless you explicitly export it
+       (CSV/Excel).</p>
+
+    <h2>9. Your rights</h2>
+    <p>You can access, export (CSV/Excel) or delete your data from the app settings or by
+       uninstalling. You can change your advertising consent choice at any time by resetting
+       your device/app preferences.</p>
+
+    <h2>10. Policy changes</h2>
+    <p>Any updates will be posted on this page with the revision date.</p>
+
+    <h2>📧 Contact</h2>
+    <p>For any question: <a href="mailto:sebastianmule24051993@gmail.com">sebastianmule24051993@gmail.com</a></p>
+  </section>
+</div>
+
+<script>
+  function setLang(l){
+    document.getElementById('it').hidden = (l!=='it');
+    document.getElementById('en').hidden = (l!=='en');
+    document.getElementById('btn-it').classList.toggle('active', l==='it');
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.documentElement.lang = l;
+  }
+</script>
 </body>
 </html>
