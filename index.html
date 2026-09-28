@@ -36,71 +36,109 @@
   <!-- ============================= ITALIANO ============================= -->
   <section id="it">
     <h1>🔐 Informativa sulla Privacy</h1>
-    <p class="muted">uRekoin · Ultimo aggiornamento: giugno 2026</p>
+    <p class="muted">uRekoin per Android e iPhone · Ultimo aggiornamento: 28 settembre 2026</p>
     <p>uRekoin è un'app di gestione del budget personale sviluppata da Sebastian Mulè
-       ("noi", "lo sviluppatore"). La tua privacy è importante. Questa informativa spiega
-       quali dati l'app tratta, dove restano e con chi vengono eventualmente condivisi.</p>
+       ("noi", "lo sviluppatore"), che è anche il titolare del trattamento. Questa informativa
+       spiega quali dati l'app tratta, dove restano e con chi vengono condivisi. Vale per la
+       versione Android e per la versione iPhone; dove le due funzionano in modo diverso lo
+       diciamo.</p>
 
-    <h2>1. Dati che l'app tratta sul tuo dispositivo</h2>
-    <p>I tuoi dati finanziari sono salvati <strong>localmente sul tuo dispositivo</strong>
-       (database SQLite) e <strong>non vengono inviati ai nostri server</strong>:</p>
+    <h2>1. I tuoi dati restano sul telefono</h2>
+    <p>I dati che inserisci o che l'app registra sono salvati <strong>solo sul tuo dispositivo</strong>
+       e <strong>non vengono inviati ai nostri server</strong> (non abbiamo server per questi dati):</p>
     <ul>
-      <li>Impostazioni di budget (stipendio, obiettivi di risparmio)</li>
-      <li>Spese e categorie inserite manualmente o rilevate</li>
-      <li>Spese fisse, abbonamenti e scadenze</li>
-      <li>Preferenze dell'app (lingua, valuta)</li>
+      <li>impostazioni del budget (stipendio o forfettario, giorno dello stipendio, risparmio);</li>
+      <li>spese, entrate, categorie, spese fisse, abbonamenti, rate e scadenze;</li>
+      <li>obiettivi di risparmio e relativi movimenti;</li>
+      <li>nomi dei negozi ricordati e preferenze dell'app (lingua, valuta, tema).</li>
     </ul>
+    <p>Non serve un account e non ti chiediamo nome, email o dati bancari.</p>
 
-    <h2>2. Accesso alle notifiche (auto-tracking)</h2>
-    <p>Se attivi l'auto-tracking, l'app legge le notifiche di pagamento per rilevarne
-       l'importo. Questa analisi avviene <strong>esclusivamente sul dispositivo</strong>:
-       il contenuto delle notifiche non viene inviato a noi né a terzi.</p>
+    <h2>2. Spese registrate in automatico</h2>
+    <p><strong>Su Android</strong>, se attivi il rilevamento automatico, l'app legge le notifiche
+       di pagamento della banca o del wallet per ricavarne importo ed esercente.</p>
+    <p><strong>Su iPhone</strong> nessuna app può leggere le notifiche delle altre. Se crei
+       un'automazione nei Comandi rapidi di Apple, è l'iPhone a passare a uRekoin il testo della
+       notifica della banca, i dati di un pagamento con Apple Pay (esercente, importo, nome della
+       carta) oppure uno screenshot. Sei tu a decidere se crearla, e puoi spegnerla o cancellarla
+       in qualsiasi momento nell'app Comandi.</p>
+    <p>In entrambi i casi l'analisi avviene <strong>esclusivamente sul dispositivo</strong>: il
+       contenuto non viene inviato a noi né a terzi.</p>
 
-    <h2>3. Importazione da screenshot (OCR)</h2>
-    <p>Se condividi uno screenshot per importare transazioni, l'immagine viene analizzata
-       <strong>sul dispositivo</strong> tramite Google ML Kit (riconoscimento testo on-device).
-       Il modello di riconoscimento può essere scaricato da Google Play Services. Le immagini
-       non vengono caricate sui nostri server.</p>
+    <h2>3. Importazione da screenshot</h2>
+    <p>Se importi uno screenshot, il testo viene letto <strong>sul dispositivo</strong>: su Android
+       con Google ML Kit (il modello può essere scaricato da Google Play Services), su iPhone con il
+       riconoscimento del testo di Apple (Vision). Le immagini non vengono caricate da nessuna parte.</p>
 
-    <h2>4. Pubblicità (Google AdMob)</h2>
-    <p>La versione gratuita mostra annunci tramite <strong>Google AdMob</strong>. Per erogare
-       gli annunci, Google e i suoi partner pubblicitari possono raccogliere e trattare
-       <strong>identificatori del dispositivo e dati d'uso</strong> (es. ID pubblicità,
-       informazioni del dispositivo). Questo è l'unico flusso di dati verso terze parti.</p>
+    <h2>4. Notifiche e promemoria</h2>
+    <p>Promemoria dei pagamenti, avviso di fine ciclo, riepilogo della settimana e conferme delle
+       spese registrate sono creati <strong>dall'app sul telefono</strong>. Non usiamo notifiche
+       inviate da un server e non raccogliamo identificativi per le notifiche.</p>
+
+    <h2>5. Pubblicità (Google AdMob)</h2>
+    <p>La versione gratuita mostra annunci tramite <strong>Google AdMob</strong>. Per erogarli,
+       Google e i suoi partner possono raccogliere e trattare <strong>identificatori del
+       dispositivo e dati d'uso</strong> (per esempio l'ID pubblicità e informazioni sul
+       dispositivo). I tuoi dati di spesa e di budget <strong>non vengono mai passati</strong> alla
+       pubblicità.</p>
     <div class="note">
-      <strong>Consenso (utenti UE/SEE, Regno Unito, Svizzera):</strong> al primo avvio mostriamo
-      un modulo di consenso Google (UMP) in cui puoi <strong>accettare o rifiutare</strong> l'uso
-      dei dati a fini pubblicitari. Se rifiuti, gli annunci saranno non personalizzati.
+      <strong>Consenso (utenti UE/SEE, Regno Unito, Svizzera):</strong> prima di mostrare annunci
+      l'app presenta il modulo di consenso di Google, in cui puoi <strong>accettare o rifiutare</strong>
+      l'uso dei dati a fini pubblicitari. Se rifiuti, gli annunci saranno non personalizzati.
     </div>
-    <p>Per dettagli su come Google tratta i dati:
+    <div class="note">
+      <strong>Su iPhone</strong> l'app ti chiede anche il permesso di Apple per il tracciamento
+      («Consenti a uRekoin di tracciare la tua attività…»). L'identificativo pubblicitario
+      dell'iPhone viene usato <strong>solo se rispondi di sì</strong>; puoi cambiare idea in
+      Impostazioni &gt; Privacy e sicurezza &gt; Tracciamento. Se rispondi di no gli annunci restano,
+      ma non personalizzati.
+    </div>
+    <p>Come Google tratta i dati:
        <a href="https://policies.google.com/technologies/partner-sites">Come Google utilizza i dati</a>.
-       La versione Premium è <strong>senza pubblicità</strong>.</p>
+       Con Premium la pubblicità non c'è.</p>
 
-    <h2>5. Acquisti in-app</h2>
-    <p>L'abbonamento Premium è gestito da <strong>Google Play Billing</strong>. I dati di
-       pagamento sono trattati da Google: lo sviluppatore <strong>non vi ha accesso</strong>.</p>
+    <h2>6. Acquisti in-app</h2>
+    <p>L'abbonamento Premium è gestito da <strong>Google Play</strong> su Android e
+       dall'<strong>App Store di Apple</strong> su iPhone. I dati di pagamento li tratta Google o
+       Apple: lo sviluppatore <strong>non vi ha accesso</strong>. L'app riceve solo l'informazione
+       che l'abbonamento è attivo.</p>
 
-    <h2>6. Dati che NON raccogliamo</h2>
-    <p>Lo sviluppatore non raccoglie né riceve sui propri server: la tua identità anagrafica,
-       le credenziali o i numeri di conto/carta, la posizione GPS, né analitiche d'uso.
-       (Resta valido quanto indicato al punto 4 per i dati gestiti da Google AdMob.)</p>
+    <h2>7. «Segnala un bug»</h2>
+    <p>Se usi la schermata «Segnala un bug» e premi Invia, mandiamo tramite il servizio
+       <strong>Formspree</strong> (Formspree Inc., Stati Uniti) il tuo messaggio, l'email
+       <strong>solo se la scrivi</strong>, la versione dell'app, il modello del telefono, la versione
+       del sistema operativo e la lingua. Ci servono solo per rispondere e correggere l'errore.
+       Senza premere Invia non parte niente.
+       <a href="https://formspree.io/legal/privacy-policy">Privacy di Formspree</a>.</p>
 
-    <h2>7. Condivisione dei dati</h2>
-    <p>Lo sviluppatore <strong>non vende, affitta o cede</strong> i tuoi dati personali o
-       finanziari. Gli unici terzi coinvolti sono <strong>Google AdMob</strong> (dati di
-       dispositivo per la pubblicità, punto 4) e <strong>Google Play</strong> (acquisti, punto 5).</p>
+    <h2>8. Backup ed esportazioni</h2>
+    <p>Backup, report Excel e immagine del riepilogo sono file creati <strong>sul telefono</strong>.
+       Dove salvarli o a chi mandarli lo scegli tu (per esempio File, iCloud Drive, Google Drive,
+       un'app di messaggi): da quel momento il file è trattato dal servizio che hai scelto.</p>
 
-    <h2>8. Conservazione e sicurezza</h2>
-    <p>I dati sono conservati localmente (SQLite), senza sincronizzazione cloud salvo
-       esportazione esplicita da parte tua (CSV/Excel).</p>
+    <h2>9. Dati che non raccogliamo</h2>
+    <p>Non raccogliamo la tua identità, credenziali o numeri di conto e di carta, la posizione,
+       i contatti né statistiche sull'uso dell'app. Nell'app non ci sono strumenti di analisi o di
+       tracciamento nostri.</p>
 
-    <h2>9. I tuoi diritti</h2>
-    <p>Puoi consultare, esportare (CSV/Excel) o eliminare i tuoi dati dalle impostazioni
-       dell'app o disinstallandola. Puoi modificare in qualsiasi momento la scelta sul consenso
-       pubblicitario reimpostando le preferenze del dispositivo/app.</p>
+    <h2>10. Con chi condividiamo i dati</h2>
+    <p>Non vendiamo, affittiamo o cediamo i tuoi dati. Gli unici terzi coinvolti sono:
+       <strong>Google AdMob</strong> (pubblicità, punto 5), <strong>Google Play</strong> e
+       <strong>Apple</strong> (acquisti, punto 6) e <strong>Formspree</strong> (solo se ci mandi una
+       segnalazione, punto 7).</p>
 
-    <h2>10. Modifiche all'informativa</h2>
-    <p>Eventuali aggiornamenti saranno pubblicati su questa pagina con la relativa data.</p>
+    <h2>11. Conservazione</h2>
+    <p>I dati dell'app restano sul telefono finché non li cancelli o disinstalli l'app. Le
+       segnalazioni ricevute tramite Formspree le conserviamo il tempo necessario a gestirle.</p>
+
+    <h2>12. I tuoi diritti</h2>
+    <p>I dati sul telefono li controlli tu: puoi consultarli, esportarli o cancellarli dall'app, o
+       disinstallandola. Per le segnalazioni che ci hai mandato puoi chiederci accesso, correzione o
+       cancellazione scrivendo all'indirizzo qui sotto. Hai anche il diritto di presentare reclamo al
+       Garante per la protezione dei dati personali.</p>
+
+    <h2>13. Modifiche all'informativa</h2>
+    <p>Gli aggiornamenti saranno pubblicati su questa pagina con la nuova data.</p>
 
     <h2>📧 Contatti</h2>
     <p>Per qualsiasi domanda: <a href="mailto:sebastianmule24051993@gmail.com">sebastianmule24051993@gmail.com</a></p>
@@ -109,71 +147,105 @@
   <!-- ============================= ENGLISH ============================= -->
   <section id="en" hidden>
     <h1>🔐 Privacy Policy</h1>
-    <p class="muted">uRekoin · Last updated: June 2026</p>
-    <p>uRekoin is a personal budget management application developed by Sebastian Mulè
-       ("we", "the developer"). Your privacy matters. This policy explains what data the app
-       handles, where it stays, and with whom it may be shared.</p>
+    <p class="muted">uRekoin for Android and iPhone · Last updated: September 28, 2026</p>
+    <p>uRekoin is a personal budget app developed by Sebastian Mulè ("we", "the developer"), who
+       is also the data controller. This policy explains what data the app handles, where it stays
+       and who it is shared with. It covers both the Android and the iPhone version; where they
+       work differently, we say so.</p>
 
-    <h2>1. Data the app handles on your device</h2>
-    <p>Your financial data is stored <strong>locally on your device</strong> (SQLite database)
-       and is <strong>not sent to our servers</strong>:</p>
+    <h2>1. Your data stays on your phone</h2>
+    <p>The data you enter or the app records is stored <strong>only on your device</strong> and is
+       <strong>not sent to our servers</strong> (we have no servers for this data):</p>
     <ul>
-      <li>Budget settings (salary, savings goals)</li>
-      <li>Manually entered or detected expenses and categories</li>
-      <li>Fixed expenses, subscriptions and due dates</li>
-      <li>App preferences (language, currency)</li>
+      <li>budget settings (salary or monthly target, payday, savings);</li>
+      <li>expenses, income, categories, fixed expenses, subscriptions, installments and due dates;</li>
+      <li>savings goals and their movements;</li>
+      <li>remembered store names and app preferences (language, currency, theme).</li>
     </ul>
+    <p>No account is needed and we never ask for your name, email or bank details.</p>
 
-    <h2>2. Notification access (auto-tracking)</h2>
-    <p>If you enable auto-tracking, the app reads payment notifications to detect the amount.
-       This analysis happens <strong>entirely on-device</strong>: notification content is never
+    <h2>2. Automatically recorded expenses</h2>
+    <p><strong>On Android</strong>, if you turn on automatic detection, the app reads payment
+       notifications from your bank or wallet to extract the amount and the merchant.</p>
+    <p><strong>On iPhone</strong> no app can read other apps' notifications. If you create an
+       automation in Apple's Shortcuts app, it is the iPhone that passes to uRekoin the text of your
+       bank's notification, the details of an Apple Pay payment (merchant, amount, card name) or a
+       screenshot. You decide whether to create it, and you can turn it off or delete it at any time
+       in the Shortcuts app.</p>
+    <p>In both cases the analysis happens <strong>entirely on-device</strong>: the content is never
        sent to us or to third parties.</p>
 
-    <h2>3. Screenshot import (OCR)</h2>
-    <p>If you share a screenshot to import transactions, the image is analyzed
-       <strong>on-device</strong> using Google ML Kit (on-device text recognition). The
-       recognition model may be downloaded from Google Play Services. Images are not uploaded
-       to our servers.</p>
+    <h2>3. Screenshot import</h2>
+    <p>If you import a screenshot, the text is read <strong>on-device</strong>: on Android with
+       Google ML Kit (the model may be downloaded from Google Play Services), on iPhone with Apple's
+       text recognition (Vision). Images are never uploaded.</p>
 
-    <h2>4. Advertising (Google AdMob)</h2>
-    <p>The free version shows ads via <strong>Google AdMob</strong>. To serve ads, Google and
-       its advertising partners may collect and process <strong>device identifiers and usage
-       data</strong> (e.g. advertising ID, device information). This is the only flow of data
-       to third parties.</p>
+    <h2>4. Notifications and reminders</h2>
+    <p>Payment reminders, end-of-cycle alerts, the weekly summary and expense confirmations are
+       created <strong>by the app on your phone</strong>. We don't use server push notifications and
+       don't collect notification identifiers.</p>
+
+    <h2>5. Advertising (Google AdMob)</h2>
+    <p>The free version shows ads via <strong>Google AdMob</strong>. To serve them, Google and its
+       partners may collect and process <strong>device identifiers and usage data</strong> (e.g. the
+       advertising ID and device information). Your spending and budget data is <strong>never
+       passed</strong> to advertising.</p>
     <div class="note">
-      <strong>Consent (EU/EEA, UK, Switzerland users):</strong> on first launch we show a Google
-      consent form (UMP) where you can <strong>accept or refuse</strong> the use of data for
+      <strong>Consent (EU/EEA, UK, Switzerland users):</strong> before showing ads the app presents
+      Google's consent form, where you can <strong>accept or refuse</strong> the use of data for
       advertising. If you refuse, ads will be non-personalized.
     </div>
-    <p>For details on how Google uses data:
+    <div class="note">
+      <strong>On iPhone</strong> the app also asks for Apple's tracking permission ("Allow uRekoin to
+      track your activity…"). The iPhone's advertising identifier is used <strong>only if you say
+      yes</strong>; you can change your mind in Settings &gt; Privacy &amp; Security &gt; Tracking.
+      If you say no, ads are still shown but not personalized.
+    </div>
+    <p>How Google uses data:
        <a href="https://policies.google.com/technologies/partner-sites">How Google uses data</a>.
-       The Premium version is <strong>ad-free</strong>.</p>
+       Premium has no ads.</p>
 
-    <h2>5. In-app purchases</h2>
-    <p>The Premium subscription is handled by <strong>Google Play Billing</strong>. Payment data
-       is processed by Google: the developer <strong>has no access</strong> to it.</p>
+    <h2>6. In-app purchases</h2>
+    <p>The Premium subscription is handled by <strong>Google Play</strong> on Android and by
+       <strong>Apple's App Store</strong> on iPhone. Payment data is processed by Google or Apple:
+       the developer <strong>has no access</strong> to it. The app only learns whether the
+       subscription is active.</p>
 
-    <h2>6. Data we do NOT collect</h2>
-    <p>The developer does not collect or receive on its servers: your identity, credentials or
-       account/card numbers, GPS location, or usage analytics. (Point 4 still applies to data
-       handled by Google AdMob.)</p>
+    <h2>7. "Report a bug"</h2>
+    <p>If you use the "Report a bug" screen and tap Send, we send through the
+       <strong>Formspree</strong> service (Formspree Inc., United States) your message, your email
+       <strong>only if you type it</strong>, the app version, the phone model, the operating system
+       version and the language. We use them only to reply and fix the problem. Nothing is sent
+       unless you tap Send.
+       <a href="https://formspree.io/legal/privacy-policy">Formspree privacy policy</a>.</p>
 
-    <h2>7. Data sharing</h2>
-    <p>The developer <strong>does not sell, rent or trade</strong> your personal or financial
-       data. The only third parties involved are <strong>Google AdMob</strong> (device data for
-       advertising, point 4) and <strong>Google Play</strong> (purchases, point 5).</p>
+    <h2>8. Backups and exports</h2>
+    <p>Backups, Excel reports and the summary image are files created <strong>on your phone</strong>.
+       You choose where to save them or who to send them to (e.g. Files, iCloud Drive, Google Drive,
+       a messaging app): from then on the file is handled by the service you chose.</p>
 
-    <h2>8. Storage and security</h2>
-    <p>Data is stored locally (SQLite), with no cloud sync unless you explicitly export it
-       (CSV/Excel).</p>
+    <h2>9. Data we do not collect</h2>
+    <p>We don't collect your identity, credentials, account or card numbers, location, contacts or
+       app usage statistics. The app contains no analytics or tracking tools of our own.</p>
 
-    <h2>9. Your rights</h2>
-    <p>You can access, export (CSV/Excel) or delete your data from the app settings or by
-       uninstalling. You can change your advertising consent choice at any time by resetting
-       your device/app preferences.</p>
+    <h2>10. Who we share data with</h2>
+    <p>We do not sell, rent or trade your data. The only third parties involved are:
+       <strong>Google AdMob</strong> (advertising, point 5), <strong>Google Play</strong> and
+       <strong>Apple</strong> (purchases, point 6) and <strong>Formspree</strong> (only if you send
+       us a report, point 7).</p>
 
-    <h2>10. Policy changes</h2>
-    <p>Any updates will be posted on this page with the revision date.</p>
+    <h2>11. Retention</h2>
+    <p>App data stays on your phone until you delete it or uninstall the app. Reports received via
+       Formspree are kept as long as needed to handle them.</p>
+
+    <h2>12. Your rights</h2>
+    <p>You control the data on your phone: you can view, export or delete it in the app, or by
+       uninstalling it. For reports you sent us, you can ask for access, correction or deletion by
+       writing to the address below. You also have the right to lodge a complaint with your data
+       protection authority.</p>
+
+    <h2>13. Policy changes</h2>
+    <p>Updates will be posted on this page with the new date.</p>
 
     <h2>📧 Contact</h2>
     <p>For any question: <a href="mailto:sebastianmule24051993@gmail.com">sebastianmule24051993@gmail.com</a></p>
@@ -188,6 +260,8 @@
     document.getElementById('btn-en').classList.toggle('active', l==='en');
     document.documentElement.lang = l;
   }
+  // Lingua del browser: chi non ha l'italiano vede l'inglese
+  if (!(navigator.language || 'it').toLowerCase().startsWith('it')) setLang('en');
 </script>
 </body>
 </html>
